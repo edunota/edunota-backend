@@ -1,1 +1,1 @@
-package moduleuser_test
+package userModule_test

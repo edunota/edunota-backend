@@ -1,1 +1,1 @@
-package moduleuser
+package userModule
