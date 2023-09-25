@@ -1,10 +1,16 @@
 package main
 
 import (
-	rest "github.com/edunota/backend/internal/app/rest"
+	"github.com/gofiber/fiber"
 )
 
 func main() {
 
-	rest.New().Run(":8082")
+	 app := fiber.New()
+
+	app.Get("/", func(c *fiber.Ctx) {
+    c.SendString("Hello, World!")
+})
+
+    app.Listen(":3000")
 }
