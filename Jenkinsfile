@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  tools { go '1.21' }
   stages {
     stage('checkout branch') {
       steps {
