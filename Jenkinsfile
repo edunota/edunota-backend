@@ -12,7 +12,7 @@ pipeline {
 
     stage('test') {
       steps {
-        sh 'go version'
+        sh 'make test'
       }
     }
 
